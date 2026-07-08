@@ -21,13 +21,13 @@ python3 -c "from PIL import Image; print('✅ Pillow 已安装')"
 如果上面两个都不报错，说明依赖安装成功。
 
 # 生成基础二维码
-python3 qrcode.py "https://github.com/jingjing737"
+python3 gen_qr.py "https://github.com/jingjing737"
 
 # 自定义颜色和尺寸
-python3 qrcode.py "Hello" -o hello.png -s 15 --fill "#4CAF50" --back "#000000"
+python3 gen_qr.py "Hello" -o hello.png -s 15 --fill "#4CAF50" --back "#000000"
 
 # 嵌入 Logo（纠错级别需用 H）
-python3 qrcode.py "https://example.com" --logo logo.png --ec H
+python3 gen_qr.py "https://example.com" --logo logo.png --ec H
 ```
 
 ## 参数说明

@@ -9,7 +9,11 @@
 > ⚠️ **注意**：不要用 `pip3 install`，必须用 `python3 -m pip install` 确保装到正确的 Python 环境。
 
 ```bash
-python3 -m pip install qrcode[pil]
+# 安装 qrcode
+python3 -m pip install qrcode
+
+# 安装 Pillow（二维码图片处理）
+python3 -m pip install Pillow
 ```
 
 验证安装：

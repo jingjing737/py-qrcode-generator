@@ -24,6 +24,9 @@ python3 -c "from PIL import Image; print('✅ Pillow 已安装')"
 
 如果上面两个都不报错，说明依赖安装成功。
 
+## 用法
+
+```bash
 # 生成基础二维码
 python3 gen_qr.py "https://github.com/jingjing737"
 

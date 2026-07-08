@@ -4,9 +4,21 @@
 
 ## 快速开始
 
+### 安装依赖
+
+> ⚠️ **注意**：不要用 `pip3 install`，必须用 `python3 -m pip install` 确保装到正确的 Python 环境。
+
 ```bash
-# 安装依赖
-pip3 install qrcode[pil]
+python3 -m pip install qrcode[pil]
+```
+
+验证安装：
+```bash
+python3 -c "import qrcode; print('✅ qrcode 已安装')"
+python3 -c "from PIL import Image; print('✅ Pillow 已安装')"
+```
+
+如果上面两个都不报错，说明依赖安装成功。
 
 # 生成基础二维码
 python3 qrcode.py "https://github.com/jingjing737"
